@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Payments Page</title>
+  <style>
+    body {
+
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 100px;
+      background-image: url('payment.jpg'); 
+      background-size: cover;
+    }
+
+    .container {
+        
+      max-width: 400px;
+      margin: 50px auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding-left:550px;
+      padding-top: 50px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      margin-bottom: 10px;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    input[type="email"],
+    input[type="submit"] {
+      padding: 5px;
+      margin-bottom: 10px;
+      border-radius: 3px;
+      border: 1px solid #ccc;
+    }
+
+    input[type="submit"] {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Make a Payment</h1>
+    <form >
+      <label for="cardNumber">Card Number:</label>
+      <input type="text" id="cardNumber" name="cardNumber" placeholder="Enter your card number" required>
+      
+      <label for="expiry">Expiry Date:</label>
+      <input type="text" id="expiry" name="expiry" placeholder="MM/YY" required>
+      
+      <label for="cvv">CVV:</label>
+      <input type="text" id="cvv" name="cvv" placeholder="CVV" required>
+      
+      <label for="name">Name on Card:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      
+      <input type="submit" value="Pay Now">
+    </form>
+  </div>
+</body>
+</html>
